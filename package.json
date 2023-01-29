@@ -1,0 +1,46 @@
+{
+  "name": "@hmilin/react-lazy-image",
+  "version": "0.0.1",
+	"description": "A react component for lazy loading images",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "src/index.tsx",
+  "exports": {
+    ".": {
+      "import": "dist/react-lazy-image.js",
+      "require": "dist/react-lazy-image.umd.cjs"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "path": "^0.12.7",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  }
+}
