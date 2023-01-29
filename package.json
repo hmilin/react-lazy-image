@@ -1,12 +1,11 @@
 {
   "name": "@hmilin/react-lazy-image",
   "version": "0.0.1",
-	"description": "A react component for lazy loading images",
+  "description": "A react component for lazy loading images",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "src/index.tsx",
   "exports": {
     ".": {
       "import": "dist/react-lazy-image.js",
@@ -16,7 +15,8 @@
   "types": "dist/index.d.ts",
   "publishConfig": {
     "main": "dist/index.js",
-    "typings": "dist/index.d.ts"
+    "typings": "dist/index.d.ts",
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "dev": "vite",
